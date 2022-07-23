@@ -42,5 +42,8 @@ bossbar remove minecraft:teleport8
 bossbar remove minecraft:teleport9
 bossbar remove minecraft:teleport10
 
+# disable this datapack
+datapack disable "file/AmethystTraveling"
+
 # message
 tellraw @a [{"translate":"§dAmethyst-fast-travel §5has been removed."}]
