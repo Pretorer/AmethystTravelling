@@ -1,4 +1,4 @@
-# AmethystTraveling
+# AmethystTravelling
 A Minecraft datapack for building fast travel points.
 It utilizes amethysts and makes them a consistently needed resource for fast travel.
 
@@ -9,10 +9,10 @@ It utilizes amethysts and makes them a consistently needed resource for fast tra
   - affects speed and available diminsions
 - in-game manual (written book)
 - designed to be multiplayer friendly
-- translations are available with the resource pack: [AmethystTraveling-language-pack](https://github.com/Pretorer/AmethystTraveling-language-pack)
+- translations are available with the resource pack: [AmethystTravelling-language-pack](https://github.com/Pretorer/AmethystTravelling-language-pack)
 
 ## Usage:
-To get the in-game manual, enter the command `/trigger AmethystTraveling.getManual`.
+To get the in-game manual, enter the command `/trigger AmethystTravelling.getManual`.
 
 ### Building
 To build a fast travel point, a 3x3 platform must be constructed from amethyst blocks. 
@@ -36,12 +36,12 @@ Netherite | 1                      | Overworld, Nether, End
 ### Connecting
 To connect two fast travel points, the first one must be marked first. To do this, stand in the middle of an activated unconnected platform and hold an amethyst shard in your hand. Now you can go to the second activated unconnected platform and do the same as you did with the first.
 
-### Traveling
+### Travelling
 To travel, stand in the center of an activated connected fast travel point and hold an amethyst shard in your hand. Now the fast travel point starts to channel.
 NPCs can be taken along by standing on the platform. However, these also consume an amethyst shard.
-After traveling, the platform must be re-entered or the amethyst shard must be taken in hand again.
+After travelling, the platform must be re-entered or the amethyst shard must be taken in hand again.
 
-![Players traveling with fast travel points.](./img/traveling.gif)
+![Players travelling with fast travel points.](./img/travelling.gif)
 **Image:** A player who travels using amethyst shards.
 
 ### Destruction
@@ -53,4 +53,4 @@ Install this datapack like any other datapack by placing it in the world's datap
 Alternatively: when a new world is created, open the datapacks menu and drag this datapack into the Minecraft window.
 
 ## Datapack removal:
-The command `/function amethysttraveling:remove` removes all entities, scoreboards and unloads all permanently loaded chunks created by this datapack.
+The command `/function amethysttravelling:remove` removes all entities, scoreboards and unloads all permanently loaded chunks created by this datapack.
