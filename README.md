@@ -36,12 +36,12 @@ Netherite | 1                      | Overworld, Nether, End
 ### Connecting
 To connect two fast travel points, the first one must be marked first. To do this, stand in the middle of an activated unconnected platform and hold an amethyst shard in your hand. Now you can go to the second activated unconnected platform and do the same as you did with the first.
 
-### Travelling
+### Traveling
 To travel, stand in the center of an activated connected fast travel point and hold an amethyst shard in your hand. Now the fast travel point starts to channel.
 NPCs can be taken along by standing on the platform. However, these also consume an amethyst shard.
-After travelling, the platform must be re-entered or the amethyst shard must be taken in hand again.
+After traveling, the platform must be re-entered or the amethyst shard must be taken in hand again.
 
-![Players traveling with fast travel points.](./img/travelling.gif)
+![Players traveling with fast travel points.](./img/traveling.gif)
 **Image:** A player who travels using amethyst shards.
 
 ### Destruction
