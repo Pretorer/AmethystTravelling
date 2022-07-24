@@ -33,7 +33,6 @@ Emerald   | 2                      | Overworld
 Diamond   | 1.5                    | Overworld, Nether
 Netherite | 1                      | Overworld, Nether, End
 
-
 ### Connecting
 To connect two fast travel points, the first one must be marked first. To do this, stand in the middle of an activated unconnected platform and hold an amethyst shard in your hand. Now you can go to the second activated unconnected platform and do the same as you did with the first.
 
@@ -41,6 +40,9 @@ To connect two fast travel points, the first one must be marked first. To do thi
 To travel, stand in the center of an activated connected fast travel point and hold an amethyst shard in your hand. Now the fast travel point starts to channel.
 NPCs can be taken along by standing on the platform. However, these also consume an amethyst shard.
 After travelling, the platform must be re-entered or the amethyst shard must be taken in hand again.
+
+![With fast travel points travilling player.](./img/travelling.gif)
+**Image:** Different tiers of fast travel points.
 
 ### Destruction
 If a block of the platform of an activated fast travel point is removed, the fast travel point is destroyed. 
@@ -51,4 +53,4 @@ Install this datapack like any other datapack by placing it in the world's datap
 Alternatively: when a new world is created, open the datapacks menu and drag this datapack into the Minecraft window.
 
 ## Datapack removal:
-The command `/function teleporter:remove` removes all entities, scoreboards and unloads all permanently loaded chunks created by this datapack.
+The command `/function amethysttraveling:remove` removes all entities, scoreboards and unloads all permanently loaded chunks created by this datapack.
