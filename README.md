@@ -9,7 +9,7 @@ It utilizes amethysts and makes them a consistently needed resource for fast tra
   - affects speed and available diminsions
 - in-game manual (written book)
 - designed to be multiplayer friendly
-- translations are available with the resource pack: [amethysttravelling-language-pack](https://github.com/Pretorer/amethysttravelling-language-pack)
+- translations are available with the resource pack: [Amethysttravelling-language-pack](https://github.com/Pretorer/Amethysttravelling-language-pack)
 
 ## Usage:
 To get the in-game manual, enter the command `/trigger Amethysttravelling.getManual`.
