@@ -5,4 +5,4 @@ scoreboard players enable @a AmethystTraveling.getManual
 scoreboard players set @a AmethystTraveling.getManual 0
 
 # loop
-schedule function teleporter:trigger/give_book 1s
+schedule function amethysttraveling:trigger/give_book 1s

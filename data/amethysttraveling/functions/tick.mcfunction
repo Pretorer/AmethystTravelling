@@ -1,6 +1,6 @@
 # main function
-function teleporter:teleport/prepare
-execute as @a at @s unless entity @s[nbt={SelectedItem:{id:"minecraft:amethyst_shard"}}] run scoreboard players set @s AT.blocked 0
+function amethysttraveling:teleport/prepare
+execute as @a at @s unless entity @s[nbt={SelectedItem: {id: "minecraft:amethyst_shard"}}] run scoreboard players set @s AT.blocked 0
 execute as @a at @s unless entity @e[tag=TpPlatform,distance=..1.5] run scoreboard players set @s AT.blocked 0
 
 execute as @a at @s unless entity @s[y=-63,dy=381] run scoreboard players set @s AT.level 0

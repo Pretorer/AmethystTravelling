@@ -1,5 +1,5 @@
 # remove marker and unload its chunks
-execute as @e[tag=TpPlatform] at @s run function teleporter:platform/remove
+execute as @e[tag=TpPlatform] at @s run function amethysttraveling:platform/remove
 
 # remove all
 scoreboard objectives remove AT.constants
@@ -22,12 +22,12 @@ scoreboard objectives remove AT.paid
 scoreboard objectives remove AmethystTraveling.getManual
 
 # reset schedule 
-schedule clear teleporter:platform/find_blocks
-schedule clear teleporter:platform/destroy
-schedule clear teleporter:platform/show
-schedule clear teleporter:connection/first_platform
-schedule clear teleporter:connection/second_platform
-schedule clear teleporter:trigger/give_book
+schedule clear amethysttraveling:platform/find_blocks
+schedule clear amethysttraveling:platform/destroy
+schedule clear amethysttraveling:platform/show
+schedule clear amethysttraveling:connection/first_platform
+schedule clear amethysttraveling:connection/second_platform
+schedule clear amethysttraveling:trigger/give_book
 
 # remove bossbars
 bossbar remove minecraft:teleport0

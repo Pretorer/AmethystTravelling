@@ -1,2 +1,2 @@
 scoreboard players set @s AT.channelTime 0
-function teleporter:teleport/show
+function amethysttraveling:teleport/show

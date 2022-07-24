@@ -3,7 +3,7 @@ scoreboard players set @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT
 forceload add ~ ~
 
 # update channelTime and level
-execute as @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] at @s run function teleporter:platform/get_type
+execute as @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] at @s run function amethysttraveling:platform/get_type
 
 # appearance
 particle minecraft:dragon_breath ~ ~ ~ 0.5 2 0.5 0.02 500

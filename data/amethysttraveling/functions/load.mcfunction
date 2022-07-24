@@ -24,25 +24,25 @@ scoreboard players set 16 AT.constants 16
 execute unless score var AT.lastId matches 0.. run scoreboard players set var AT.lastId 0
 
 # schedule loops
-function teleporter:platform/find_blocks
-schedule function teleporter:platform/destroy 4t
-schedule function teleporter:platform/show 8t
-schedule function teleporter:connection/first_platform 12t
-schedule function teleporter:connection/second_platform 16t
-schedule function teleporter:trigger/give_book 1s
+function amethysttraveling:platform/find_blocks
+schedule function amethysttraveling:platform/destroy 4t
+schedule function amethysttraveling:platform/show 8t
+schedule function amethysttraveling:connection/first_platform 12t
+schedule function amethysttraveling:connection/second_platform 16t
+schedule function amethysttraveling:trigger/give_book 1s
 
 # setup bossbars
-bossbar add teleport0 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport1 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport2 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport3 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport4 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport5 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport6 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport7 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport8 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport9 {"text":"Teleport","color":"dark_purple"}
-bossbar add teleport10 {"text":"Teleport","color":"dark_purple"}
+bossbar add teleport0 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport1 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport2 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport3 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport4 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport5 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport6 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport7 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport8 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport9 {"translate":"Channelling","color":"dark_purple"}
+bossbar add teleport10 {"translate":"Channelling","color":"dark_purple"}
 
 bossbar set minecraft:teleport0 max 10
 bossbar set minecraft:teleport1 max 10
