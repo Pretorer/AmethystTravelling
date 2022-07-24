@@ -4,4 +4,4 @@ particle minecraft:explosion ~ ~0.2 ~ 0.2 0.3 0.2 1 10
 scoreboard players set @s AT.isConnected 0
 
 # message
-tellraw @a [{"translate":"§5A §dteleporter §5has lost its destination!"}]
+tellraw @a [{"translate":"§5A §dfast travel point §5has lost its destination!"}]

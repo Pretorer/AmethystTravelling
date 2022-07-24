@@ -1,5 +1,5 @@
 # remove marker and unload its chunks
-execute as @e[tag=TpPlatform] at @s run function amethysttraveling:platform/remove
+execute as @e[tag=TpPlatform] at @s run function amethysttravelling:platform/remove
 
 # remove all
 scoreboard objectives remove AT.constants
@@ -19,15 +19,15 @@ scoreboard objectives remove AT.dimension
 scoreboard objectives remove AT.chunkX
 scoreboard objectives remove AT.chunkZ
 scoreboard objectives remove AT.paid
-scoreboard objectives remove AmethystTraveling.getManual
+scoreboard objectives remove amethysttravelling.getManual
 
 # reset schedule 
-schedule clear amethysttraveling:platform/find_blocks
-schedule clear amethysttraveling:platform/destroy
-schedule clear amethysttraveling:platform/show
-schedule clear amethysttraveling:connection/first_platform
-schedule clear amethysttraveling:connection/second_platform
-schedule clear amethysttraveling:trigger/give_book
+schedule clear amethysttravelling:platform/find_blocks
+schedule clear amethysttravelling:platform/destroy
+schedule clear amethysttravelling:platform/show
+schedule clear amethysttravelling:connection/first_platform
+schedule clear amethysttravelling:connection/second_platform
+schedule clear amethysttravelling:trigger/give_book
 
 # remove bossbars
 bossbar remove minecraft:teleport0
@@ -43,7 +43,7 @@ bossbar remove minecraft:teleport9
 bossbar remove minecraft:teleport10
 
 # disable this datapack
-datapack disable "file/AmethystTraveling"
+datapack disable "file/amethysttravelling"
 
 # message
 tellraw @a [{"translate":"§dAmethyst-fast-travel §5has been removed."}]

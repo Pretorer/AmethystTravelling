@@ -16,7 +16,7 @@ scoreboard objectives add AT.dimension dummy
 scoreboard objectives add AT.chunkX dummy
 scoreboard objectives add AT.chunkZ dummy
 scoreboard objectives add AT.paid dummy
-scoreboard objectives add AmethystTraveling.getManual trigger
+scoreboard objectives add Amethysttravelling.getManual trigger
 
 # setup
 scoreboard players set 10 AT.constants 10
@@ -24,12 +24,12 @@ scoreboard players set 16 AT.constants 16
 execute unless score var AT.lastId matches 0.. run scoreboard players set var AT.lastId 0
 
 # schedule loops
-function amethysttraveling:platform/find_blocks
-schedule function amethysttraveling:platform/destroy 4t
-schedule function amethysttraveling:platform/show 8t
-schedule function amethysttraveling:connection/first_platform 12t
-schedule function amethysttraveling:connection/second_platform 16t
-schedule function amethysttraveling:trigger/give_book 1s
+function amethysttravelling:platform/find_blocks
+schedule function amethysttravelling:platform/destroy 4t
+schedule function amethysttravelling:platform/show 8t
+schedule function amethysttravelling:connection/first_platform 12t
+schedule function amethysttravelling:connection/second_platform 16t
+schedule function amethysttravelling:trigger/give_book 20t
 
 # setup bossbars
 bossbar add teleport0 {"translate":"Channelling","color":"dark_purple"}

@@ -12,4 +12,4 @@ scoreboard players set @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT
 scoreboard players set @s AT.blocked 1
 
 # message
-tellraw @s [{"translate":"§5You have selected the first §dteleporter§5!"}]
+tellraw @s [{"translate":"§5You have selected the first §dfast travel point§5!"}]

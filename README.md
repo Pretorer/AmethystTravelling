@@ -1,4 +1,4 @@
-# AmethystTraveling
+# amethysttravelling
 A Minecraft datapack for building fast travel points.
 It utilizes amethysts and makes them a consistently needed resource for fast travel.
 
@@ -9,10 +9,10 @@ It utilizes amethysts and makes them a consistently needed resource for fast tra
   - affects speed and available diminsions
 - in-game manual (written book)
 - designed to be multiplayer friendly
-- translations are available with the resource pack: [AmethystTraveling-language-pack](https://github.com/Pretorer/AmethystTraveling-language-pack)
+- translations are available with the resource pack: [amethysttravelling-language-pack](https://github.com/Pretorer/amethysttravelling-language-pack)
 
 ## Usage:
-To get the in-game manual, enter the command `/trigger AmethystTraveling.getManual`.
+To get the in-game manual, enter the command `/trigger Amethysttravelling.getManual`.
 
 ### Building
 To build a fast travel point, a 3x3 platform must be constructed from amethyst blocks. 
@@ -53,4 +53,4 @@ Install this datapack like any other datapack by placing it in the world's datap
 Alternatively: when a new world is created, open the datapacks menu and drag this datapack into the Minecraft window.
 
 ## Datapack removal:
-The command `/function amethysttraveling:remove` removes all entities, scoreboards and unloads all permanently loaded chunks created by this datapack.
+The command `/function amethysttravelling:remove` removes all entities, scoreboards and unloads all permanently loaded chunks created by this datapack.
