@@ -41,8 +41,8 @@ To travel, stand in the center of an activated connected fast travel point and h
 NPCs can be taken along by standing on the platform. However, these also consume an amethyst shard.
 After travelling, the platform must be re-entered or the amethyst shard must be taken in hand again.
 
-![With fast travel points travilling player.](./img/travelling.gif)
-**Image:** Different tiers of fast travel points.
+![Players traveling with fast travel points.](./img/travelling.gif)
+**Image:** A player who travels using amethyst shards.
 
 ### Destruction
 If a block of the platform of an activated fast travel point is removed, the fast travel point is destroyed. 
