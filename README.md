@@ -1,4 +1,4 @@
-# amethysttravelling
+# Amethysttravelling
 A Minecraft datapack for building fast travel points.
 It utilizes amethysts and makes them a consistently needed resource for fast travel.
 
