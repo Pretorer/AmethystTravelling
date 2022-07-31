@@ -1,1 +1,1 @@
-execute as @e[tag=TpPlatform] at @s run function amethysttravelling:platform/get_type
+execute as @e[tag=fast_travel_point] at @s run function amethysttravelling:platform/get_type

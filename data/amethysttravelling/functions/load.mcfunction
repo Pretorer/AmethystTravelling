@@ -1,23 +1,23 @@
 # add variables
-scoreboard objectives add AT.constants dummy
-scoreboard objectives add AT.config dummy
-scoreboard objectives add AT.findTp dummy
-scoreboard objectives add AT.isIntact dummy
-scoreboard objectives add AT.channelTime dummy
-scoreboard objectives add AT.relChannTime dummy
-scoreboard objectives add AT.level dummy
-scoreboard objectives add AT.isConnected dummy
-scoreboard objectives add AT.isConnecting dummy
-scoreboard objectives add AT.lastId dummy
-scoreboard objectives add AT.id dummy
-scoreboard objectives add AT.targetId dummy
-scoreboard objectives add AT.selected dummy
+scoreboard objectives add Amethysttravelling.getManual trigger
 scoreboard objectives add AT.blocked dummy
-scoreboard objectives add AT.dimension dummy
+scoreboard objectives add AT.channelTime dummy
 scoreboard objectives add AT.chunkX dummy
 scoreboard objectives add AT.chunkZ dummy
+scoreboard objectives add AT.config dummy
+scoreboard objectives add AT.constants dummy
+scoreboard objectives add AT.dimension dummy
+scoreboard objectives add AT.findBlock dummy
+scoreboard objectives add AT.id dummy
+scoreboard objectives add AT.isConnected dummy
+scoreboard objectives add AT.isConnecting dummy
+scoreboard objectives add AT.isIntact dummy
+scoreboard objectives add AT.lastId dummy
+scoreboard objectives add AT.level dummy
 scoreboard objectives add AT.paid dummy
-scoreboard objectives add Amethysttravelling.getManual trigger
+scoreboard objectives add AT.relChannTime dummy
+scoreboard objectives add AT.selected dummy
+scoreboard objectives add AT.targetId dummy
 
 # setup
 scoreboard players set 10 AT.constants 10

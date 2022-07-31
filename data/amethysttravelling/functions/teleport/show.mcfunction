@@ -1,10 +1,10 @@
 # prepare channelling
 execute as @a run scoreboard players operation @s AT.relChannTime = @s AT.channelTime
 execute as @a[scores={AT.channelTime=1..}] run scoreboard players operation @s AT.relChannTime *= 10 AT.constants
-execute as @a[scores={AT.channelTime=1..}] at @s run scoreboard players operation @s AT.relChannTime /= @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.channelTime
+execute as @a[scores={AT.channelTime=1..}] at @s run scoreboard players operation @s AT.relChannTime /= @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] AT.channelTime
 
 # workaround for platforms with zero channeling time
-execute as @a[scores={AT.channelTime=0}] at @s if entity @e[tag=TpPlatform,distance=..1.5,sort=nearest,scores={AT.channelTime=0}] run scoreboard players set @s AT.relChannTime 10
+execute as @a[scores={AT.channelTime=0}] at @s if entity @e[tag=fast_travel_point,distance=..1.5,sort=nearest,scores={AT.channelTime=0}] run scoreboard players set @s AT.relChannTime 10
 
 # channelling sound by player
 execute at @a[scores={AT.relChannTime=1}] run playsound minecraft:particle.soul_escape master @a ~ ~ ~ 0.1 0.1
@@ -31,21 +31,21 @@ execute as @a[scores={AT.relChannTime=9}] at @s run particle minecraft:enchant ~
 execute as @a[scores={AT.relChannTime=10}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 2048
 
 # channelling particle by destination
-execute as @e[tag=TpPlatform] at @s unless entity @p[distance=..1.5,scores={AT.channelTime=0..}] run scoreboard players set @s AT.relChannTime 0
-execute as @a at @s if score @s AT.relChannTime > @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.relChannTime run scoreboard players operation @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.relChannTime = @s AT.relChannTime
-execute at @a[scores={AT.channelTime=0..}] as @e[tag=TpPlatform] if score @s AT.id = @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.targetId run scoreboard players operation @s AT.relChannTime = @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.relChannTime
-execute as @e[tag=TpPlatform] at @s if entity @p[distance=..1.5,scores={AT.channelTime=0..}] run scoreboard players set @s AT.relChannTime 0
+execute as @e[tag=fast_travel_point] at @s unless entity @p[distance=..1.5,scores={AT.channelTime=0..}] run scoreboard players set @s AT.relChannTime 0
+execute as @a at @s if score @s AT.relChannTime > @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] AT.relChannTime run scoreboard players operation @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] AT.relChannTime = @s AT.relChannTime
+execute at @a[scores={AT.channelTime=0..}] as @e[tag=fast_travel_point] if score @s AT.id = @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] AT.targetId run scoreboard players operation @s AT.relChannTime = @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] AT.relChannTime
+execute as @e[tag=fast_travel_point] at @s if entity @p[distance=..1.5,scores={AT.channelTime=0..}] run scoreboard players set @s AT.relChannTime 0
 
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=1}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 4
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=2}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 8
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=3}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 16
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=4}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 32
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=5}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 64
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=6}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 128
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=7}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 256
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=8}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 512
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=9}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 1024
-execute as @e[tag=TpPlatform,scores={AT.relChannTime=10}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 2048
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=1}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 4
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=2}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 8
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=3}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 16
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=4}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 32
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=5}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 64
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=6}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 128
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=7}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 256
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=8}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 512
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=9}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 1024
+execute as @e[tag=fast_travel_point,scores={AT.relChannTime=10}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 2048
 
 # set bossbar
 bossbar set minecraft:teleport0 players @a[scores={AT.channelTime=1..,AT.relChannTime=0}]

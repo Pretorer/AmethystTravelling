@@ -1,26 +1,26 @@
 # remove marker and unload its chunks
-execute as @e[tag=TpPlatform] at @s run function amethysttravelling:platform/remove
+execute as @e[tag=fast_travel_point] at @s run function amethysttravelling:platform/remove
 
-# remove all
-scoreboard objectives remove AT.constants
-scoreboard objectives remove AT.config
-scoreboard objectives remove AT.findTp
-scoreboard objectives remove AT.isIntact
-scoreboard objectives remove AT.channelTime
-scoreboard objectives remove AT.relChannTime
-scoreboard objectives remove AT.level
-scoreboard objectives remove AT.isConnected
-scoreboard objectives remove AT.isConnecting
-scoreboard objectives remove AT.lastId
-scoreboard objectives remove AT.id
-scoreboard objectives remove AT.targetId
-scoreboard objectives remove AT.selected
+# remove all scoreboards
+scoreboard objectives remove amethysttravelling.getManual
 scoreboard objectives remove AT.blocked
-scoreboard objectives remove AT.dimension
+scoreboard objectives remove AT.channelTime
 scoreboard objectives remove AT.chunkX
 scoreboard objectives remove AT.chunkZ
+scoreboard objectives remove AT.config
+scoreboard objectives remove AT.constants
+scoreboard objectives remove AT.dimension
+scoreboard objectives remove AT.findBlock
+scoreboard objectives remove AT.id
+scoreboard objectives remove AT.isConnected
+scoreboard objectives remove AT.isConnecting
+scoreboard objectives remove AT.isIntact
+scoreboard objectives remove AT.lastId
+scoreboard objectives remove AT.level
 scoreboard objectives remove AT.paid
-scoreboard objectives remove amethysttravelling.getManual
+scoreboard objectives remove AT.relChannTime
+scoreboard objectives remove AT.selected
+scoreboard objectives remove AT.targetId
 
 # reset schedule 
 schedule clear amethysttravelling:platform/detect_built_platform
