@@ -1,4 +1,4 @@
-clear @s minecraft:amethyst_shard 1
+clear @s #amethysttravelling:magical_item 1
 playsound minecraft:item.lodestone_compass.lock block @a ~ ~1 ~ 2 1.6
 
 # store taget in player

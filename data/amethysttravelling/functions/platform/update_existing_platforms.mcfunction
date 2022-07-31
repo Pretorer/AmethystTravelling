@@ -1,0 +1,1 @@
+execute as @e[tag=TpPlatform] at @s run function amethysttravelling:platform/get_type

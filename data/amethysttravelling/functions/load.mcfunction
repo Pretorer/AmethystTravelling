@@ -1,5 +1,6 @@
 # add variables
 scoreboard objectives add AT.constants dummy
+scoreboard objectives add AT.config dummy
 scoreboard objectives add AT.findTp dummy
 scoreboard objectives add AT.isIntact dummy
 scoreboard objectives add AT.channelTime dummy
@@ -21,10 +22,18 @@ scoreboard objectives add Amethysttravelling.getManual trigger
 # setup
 scoreboard players set 10 AT.constants 10
 scoreboard players set 16 AT.constants 16
+
+execute unless score copper AT.config matches 0.. run scoreboard players set copper AT.config 200
+execute unless score iron AT.config matches 0.. run scoreboard players set iron AT.config 120
+execute unless score gold AT.config matches 0.. run scoreboard players set gold AT.config 60
+execute unless score emerald AT.config matches 0.. run scoreboard players set emerald AT.config 40
+execute unless score diamond AT.config matches 0.. run scoreboard players set diamond AT.config 30
+execute unless score netherite AT.config matches 0.. run scoreboard players set netherite AT.config 20
+
 execute unless score var AT.lastId matches 0.. run scoreboard players set var AT.lastId 0
 
 # schedule loops
-function amethysttravelling:platform/find_blocks
+function amethysttravelling:platform/detect_built_platform
 schedule function amethysttravelling:platform/destroy 4t
 schedule function amethysttravelling:platform/show 8t
 schedule function amethysttravelling:connection/first_platform 12t

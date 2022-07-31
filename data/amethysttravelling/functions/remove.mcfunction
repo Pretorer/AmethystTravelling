@@ -3,6 +3,7 @@ execute as @e[tag=TpPlatform] at @s run function amethysttravelling:platform/rem
 
 # remove all
 scoreboard objectives remove AT.constants
+scoreboard objectives remove AT.config
 scoreboard objectives remove AT.findTp
 scoreboard objectives remove AT.isIntact
 scoreboard objectives remove AT.channelTime
@@ -22,7 +23,7 @@ scoreboard objectives remove AT.paid
 scoreboard objectives remove amethysttravelling.getManual
 
 # reset schedule 
-schedule clear amethysttravelling:platform/find_blocks
+schedule clear amethysttravelling:platform/detect_built_platform
 schedule clear amethysttravelling:platform/destroy
 schedule clear amethysttravelling:platform/show
 schedule clear amethysttravelling:connection/first_platform
@@ -43,7 +44,7 @@ bossbar remove minecraft:teleport9
 bossbar remove minecraft:teleport10
 
 # disable this datapack
-datapack disable "file/amethysttravelling"
+datapack disable "file/AmethystTravelling"
 
 # message
 tellraw @a [{"translate":"§dAmethyst-fast-travel §5has been removed."}]

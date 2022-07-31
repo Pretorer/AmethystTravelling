@@ -1,7 +1,10 @@
 # prepare channelling
-execute as @a run scoreboard players operation @s AT.relChannTime = @s AT.channelTime 
-execute as @a run scoreboard players operation @s AT.relChannTime *= 10 AT.constants
-execute as @a at @s run scoreboard players operation @s AT.relChannTime /= @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.channelTime
+execute as @a run scoreboard players operation @s AT.relChannTime = @s AT.channelTime
+execute as @a[scores={AT.channelTime=1..}] run scoreboard players operation @s AT.relChannTime *= 10 AT.constants
+execute as @a[scores={AT.channelTime=1..}] at @s run scoreboard players operation @s AT.relChannTime /= @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.channelTime
+
+# workaround for platforms with zero channeling time
+execute as @a[scores={AT.channelTime=0}] at @s if entity @e[tag=TpPlatform,distance=..1.5,sort=nearest,scores={AT.channelTime=0}] run scoreboard players set @s AT.relChannTime 10
 
 # channelling sound by player
 execute at @a[scores={AT.relChannTime=1}] run playsound minecraft:particle.soul_escape master @a ~ ~ ~ 0.1 0.1
@@ -28,10 +31,10 @@ execute as @a[scores={AT.relChannTime=9}] at @s run particle minecraft:enchant ~
 execute as @a[scores={AT.relChannTime=10}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 2048
 
 # channelling particle by destination
-execute as @e[tag=TpPlatform] at @s unless entity @p[distance=..1.5,scores={AT.channelTime=1..}] run scoreboard players set @s AT.relChannTime 0
-execute as @a at @s if score @s AT.relChannTime > @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.relChannTime run scoreboard players operation @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.relChannTime = @s AT.relChannTime 
-execute at @a[scores={AT.channelTime=1..}] as @e[tag=TpPlatform] if score @s AT.id = @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.targetId run scoreboard players operation @s AT.relChannTime = @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.relChannTime
-execute as @e[tag=TpPlatform] at @s if entity @p[distance=..1.5,scores={AT.channelTime=1..}] run scoreboard players set @s AT.relChannTime 0
+execute as @e[tag=TpPlatform] at @s unless entity @p[distance=..1.5,scores={AT.channelTime=0..}] run scoreboard players set @s AT.relChannTime 0
+execute as @a at @s if score @s AT.relChannTime > @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.relChannTime run scoreboard players operation @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.relChannTime = @s AT.relChannTime
+execute at @a[scores={AT.channelTime=0..}] as @e[tag=TpPlatform] if score @s AT.id = @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.targetId run scoreboard players operation @s AT.relChannTime = @e[tag=TpPlatform,distance=..1.5,sort=nearest,limit=1] AT.relChannTime
+execute as @e[tag=TpPlatform] at @s if entity @p[distance=..1.5,scores={AT.channelTime=0..}] run scoreboard players set @s AT.relChannTime 0
 
 execute as @e[tag=TpPlatform,scores={AT.relChannTime=1}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 4
 execute as @e[tag=TpPlatform,scores={AT.relChannTime=2}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 8

@@ -1,2 +1,2 @@
-scoreboard players set @s AT.channelTime 0
+scoreboard players set @s AT.channelTime -1
 function amethysttravelling:teleport/show

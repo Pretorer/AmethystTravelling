@@ -1,14 +1,14 @@
 # test build
 scoreboard players set @e[tag=TpPlatform] AT.isIntact 0
-execute as @e[tag=TpPlatform] at @s if block ~1 ~-1 ~1 #magical_block run scoreboard players add @s AT.isIntact 1
-execute as @e[tag=TpPlatform] at @s if block ~1 ~-1 ~ #magical_block run scoreboard players add @s AT.isIntact 1
-execute as @e[tag=TpPlatform] at @s if block ~1 ~-1 ~-1 #magical_block run scoreboard players add @s AT.isIntact 1
-execute as @e[tag=TpPlatform] at @s if block ~ ~-1 ~1 #magical_block run scoreboard players add @s AT.isIntact 1
-execute as @e[tag=TpPlatform] at @s if block ~ ~-1 ~ #condenser run scoreboard players add @s AT.isIntact 1
-execute as @e[tag=TpPlatform] at @s if block ~ ~-1 ~-1 #magical_block run scoreboard players add @s AT.isIntact 1
-execute as @e[tag=TpPlatform] at @s if block ~-1 ~-1 ~1 #magical_block run scoreboard players add @s AT.isIntact 1
-execute as @e[tag=TpPlatform] at @s if block ~-1 ~-1 ~ #magical_block run scoreboard players add @s AT.isIntact 1
-execute as @e[tag=TpPlatform] at @s if block ~-1 ~-1 ~-1 #magical_block run scoreboard players add @s AT.isIntact 1
+execute as @e[tag=TpPlatform] at @s if block ~1 ~-1 ~1 #amethysttravelling:magical_block run scoreboard players add @s AT.isIntact 1
+execute as @e[tag=TpPlatform] at @s if block ~1 ~-1 ~ #amethysttravelling:magical_block run scoreboard players add @s AT.isIntact 1
+execute as @e[tag=TpPlatform] at @s if block ~1 ~-1 ~-1 #amethysttravelling:magical_block run scoreboard players add @s AT.isIntact 1
+execute as @e[tag=TpPlatform] at @s if block ~ ~-1 ~1 #amethysttravelling:magical_block run scoreboard players add @s AT.isIntact 1
+execute as @e[tag=TpPlatform] at @s if block ~ ~-1 ~ #amethysttravelling:condenser run scoreboard players add @s AT.isIntact 1
+execute as @e[tag=TpPlatform] at @s if block ~ ~-1 ~-1 #amethysttravelling:magical_block run scoreboard players add @s AT.isIntact 1
+execute as @e[tag=TpPlatform] at @s if block ~-1 ~-1 ~1 #amethysttravelling:magical_block run scoreboard players add @s AT.isIntact 1
+execute as @e[tag=TpPlatform] at @s if block ~-1 ~-1 ~ #amethysttravelling:magical_block run scoreboard players add @s AT.isIntact 1
+execute as @e[tag=TpPlatform] at @s if block ~-1 ~-1 ~-1 #amethysttravelling:magical_block run scoreboard players add @s AT.isIntact 1
 
 # test dimension
 #   17: "minecraft:the_end"
