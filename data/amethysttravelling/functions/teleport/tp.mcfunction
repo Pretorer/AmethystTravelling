@@ -12,6 +12,9 @@ execute if entity @e[tag=fast_travel_point,scores={AT.selected=1}] run playsound
 execute at @e[tag=fast_travel_point,scores={AT.selected=1},limit=1] run tp @s ~ ~ ~
 execute at @e[tag=fast_travel_point,scores={AT.selected=1}] run playsound minecraft:entity.illusioner.prepare_mirror block @a ~ ~ ~ 0.7 1.9
 
+# title after travilling
+execute at @s if entity @e[tag=fast_travel_point,distance=..1.5,name=!" ",sort=nearest,limit=1] run function amethysttravelling:teleport/show_title
+
 # taget not found / destroyed
 execute unless entity @e[tag=fast_travel_point,scores={AT.selected=1}] as @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] at @s run function amethysttravelling:platform/unlink
 
