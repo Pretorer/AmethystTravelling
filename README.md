@@ -50,7 +50,7 @@ After traveling, the platform must be re-entered or the amethyst shard must be t
 When a fast travel point is renamed with a name tag, its name is shown when a player travels to it.
 
 ![Renaming of a fast travel point.](./img/renaming.gif)
-**Image:** Display of the name of a renamed fast travel point after travelling.
+**Image:** Display the name of a renamed fast travel point after traveling.
 
 ### Destruction
 If a block of the platform of an activated fast travel point is removed, the fast travel point is destroyed. 
