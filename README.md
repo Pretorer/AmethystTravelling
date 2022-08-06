@@ -4,13 +4,14 @@ It utilizes amethysts and makes them a consistently needed resource for fast tra
 
 ## Features:
 - fast travel between distant places and diminsions
-- allows to carry nearby npcs (also mobs)
+  - can display the name of the destination after travelling
+  - allows to carry nearby npcs (also mobs)
 - different tiers of fast travel points
   - affects speed and available diminsions
 - in-game manual (written book)
 - designed to be multiplayer friendly
 - no necessary resource pack
-- optional translations are available with the resource pack: [Amethysttravelling-language-pack](https://github.com/Pretorer/Amethysttravelling-language-pack)
+  - optional translations are available with the resource pack: [Amethysttravelling-language-pack](https://github.com/Pretorer/Amethysttravelling-language-pack)
 
 ## Usage:
 To get the in-game manual, enter the command `/trigger Amethysttravelling.getManual`.
