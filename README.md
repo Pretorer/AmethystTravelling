@@ -23,7 +23,7 @@ In addition, not all fast travel points can be kept permanently active in all di
 For this the right "catalyst" must be chosen. 
 To activate the platform of a fast travel point, you must stand in the middle of the platform.
 
-![Different 3x3 platforms out of amethyst blocks with different blocks in the center.](./img/tiers.png)
+![Different 3x3 platforms out of amethyst blocks with different blocks in the center.](./img/tiers.png)  
 **Image:** Different tiers of fast travel points.
 
 Block     | Default channelization time  (in s)| Dimensions
@@ -43,13 +43,13 @@ To travel, stand in the center of an activated connected fast travel point and h
 NPCs can be taken along by standing on the platform. However, these also consume an amethyst shard.
 After traveling, the platform must be re-entered or the amethyst shard must be taken in hand again.
 
-![Players traveling with fast travel points.](./img/traveling.gif)
+![Players traveling with fast travel points.](./img/traveling.gif)  
 **Image:** A player who travels using amethyst shards.
 
 ### Renaming 
 When a fast travel point is renamed with a name tag, its name is shown when a player travels to it.
 
-![Renaming of a fast travel point.](./img/renaming.gif)
+![Renaming of a fast travel point.](./img/renaming.gif)  
 **Image:** Display the name of a renamed fast travel point after traveling.
 
 ### Destruction
