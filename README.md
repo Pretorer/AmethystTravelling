@@ -62,7 +62,7 @@ Alternatively: when a new world is created, open the datapacks menu and drag thi
 
 ## Datapack removal:
 The command `/function amethysttravelling:remove` removes all entities, scoreboards and unloads all permanently loaded chunks created by this datapack.
-To reinstall this datapack, use the command `/datapack enable "file/AmethystTravelling"`.
+To reinstall this datapack, use the command `/datapack enable "file/AmethystTravelling.zip"`.
 
 ## Configuration:
 
