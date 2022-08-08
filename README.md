@@ -14,7 +14,7 @@ It utilizes amethysts and makes them a consistently needed resource for fast tra
   - optional translations are available with the resource pack: [Amethysttravelling-language-pack](https://github.com/Pretorer/Amethysttravelling-language-pack)
 
 ## Usage:
-To get the in-game manual, enter the command `/trigger Amethysttravelling.getManual`.
+To get the in-game manual, enter the command `/trigger AT.getManual`.
 
 ### Building
 To build a fast travel point, a 3x3 platform must be constructed from amethyst blocks. 

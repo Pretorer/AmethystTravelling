@@ -2,7 +2,7 @@
 execute as @e[tag=fast_travel_point] at @s run function amethysttravelling:platform/remove
 
 # remove all scoreboards
-scoreboard objectives remove amethysttravelling.getManual
+scoreboard objectives remove AT.getManual
 scoreboard objectives remove AT.blocked
 scoreboard objectives remove AT.channelTime
 scoreboard objectives remove AT.chunkX
