@@ -72,7 +72,7 @@ For example, a netherite fast travel point that lets you travel into the end can
 Use `/scoreboard objectives setdisplay sidebar AT.config` to see all channeling times in ticks (20 ticks are one second). To hide the scoreboard use `/scoreboard objectives setdisplay sidebar`.
 To update a specific channelization time of a tier shown in the scoreboard, use `/scoreboard players set <tier> AT.config <ticks>` and update all existing fast travel points with the command `/function amethysttravelling:platform/update_existing_platforms`.
 
-### Meterials
+### Materials
 You can easily change the materials for the outer ring of the platform by changing the json file *"AmethystTravelling/data/amethysttravelling/tags/blocks/magical_block.json"* and the item you use for the travel in *"AmethystTravelling/data/amethysttravelling/tags/items/magical_item.json"*. 
 If you want to add a new block for a custom tier of a fast travel point, edit *"AmethystTravelling/data/amethysttravelling/tags/blocks/condenser.json"*, the fast travel point is not known by default and you will get the lowest tier and 10 seconds of channeling time.
 If you want to change this, it can be helpful to modifiy *"AmethystTravelling/data/amethysttravelling/functions/platform/get_type.mcfunction"*.
