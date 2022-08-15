@@ -1,5 +1,5 @@
 # add variables
-scoreboard objectives add Amethysttravelling.getManual trigger
+scoreboard objectives add AT.getManual trigger
 scoreboard objectives add AT.blocked dummy
 scoreboard objectives add AT.channelTime dummy
 scoreboard objectives add AT.chunkX dummy

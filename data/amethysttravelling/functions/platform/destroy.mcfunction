@@ -1,6 +1,6 @@
 function amethysttravelling:platform/check
 
-execute at @e[tag=fast_travel_point,scores={AT.isIntact=..8}] run particle minecraft:falling_obsidian_tear ~ ~ ~ 0.5 1.5 0.5 0.02 500
+execute at @e[tag=fast_travel_point,scores={AT.isIntact=..8}] run particle minecraft:falling_obsidian_tear ~ ~ ~ 0.5 1.5 0.5 0.02 500 force
 execute at @e[tag=fast_travel_point,scores={AT.isIntact=..8}] run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 1 1.3
 execute at @e[tag=fast_travel_point,scores={AT.isIntact=..8}] run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 1 1.5
 

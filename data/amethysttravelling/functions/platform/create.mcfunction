@@ -12,7 +12,7 @@ execute as @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] at @s r
 execute as @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] at @s run function amethysttravelling:platform/get_chunk
 
 # appearance
-particle minecraft:dragon_breath ~ ~ ~ 0.5 2 0.5 0.02 500
+particle minecraft:dragon_breath ~ ~ ~ 0.5 2 0.5 0.02 500 force
 playsound minecraft:block.beacon.activate block @a ~ ~ ~ 1 1.3
 playsound minecraft:block.beacon.activate block @a ~ ~ ~ 1 1.5
 
