@@ -5,7 +5,8 @@ execute at @e[tag=fast_travel_point,scores={AT.isIntact=..8}] run playsound mine
 execute at @e[tag=fast_travel_point,scores={AT.isIntact=..8}] run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 1 1.5
 
 # message
-execute at @e[tag=fast_travel_point,scores={AT.isIntact=..8}] run tellraw @a [{"translate":"%1$s §5has destroyed a §dfast travel point§5!","with":[{"selector":"@p","color":"dark_purple"}]}]
+execute at @e[tag=fast_travel_point,scores={AT.isIntact=-1}] run tellraw @p [{"translate":"§5This tier of a §dfast travel point§5 cannot be activated here!"}]
+execute at @e[tag=fast_travel_point,scores={AT.isIntact=0..8}] run tellraw @a [{"translate":"%1$s §5has destroyed a §dfast travel point§5!","with":[{"selector":"@p","color":"dark_purple"}]}]
 
 # remove
 execute as @e[tag=fast_travel_point,scores={AT.isIntact=..8}] at @s run function amethysttravelling:platform/remove
