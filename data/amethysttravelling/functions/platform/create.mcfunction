@@ -20,4 +20,4 @@ playsound minecraft:block.beacon.activate block @a ~ ~ ~ 1 1.5
 scoreboard players set @s AT.blocked 1
 
 # message
-tellraw @a [{"translate":"%1$s §5has built a new §dfast travel point§5!","with":[{"selector":"@p","color":"dark_purple"}]}]
+tellraw @p [{"translate":"%1$s §5has built a new §dfast travel point§5!","with":[{"selector":"@p","color":"dark_purple"}]}]
