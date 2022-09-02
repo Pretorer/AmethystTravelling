@@ -3,11 +3,11 @@ A Minecraft datapack for building fast travel points.
 It utilizes amethysts and makes them a consistently needed resource for fast travel.
 
 ## Features:
-- fast travel between distant places and diminsions
+- fast travel between distant places and dimensions
   - can display the name of the destination after travelling
   - allows to carry nearby npcs (also mobs)
 - different tiers of fast travel points
-  - affects speed and available diminsions
+  - affects speed and available dimensions
 - in-game manual (written book)
 - designed to be multiplayer friendly
 - no necessary resource pack
@@ -19,7 +19,7 @@ To get the in-game manual, enter the command `/trigger AT.getManual`.
 ### Building
 To build a fast travel point, a 3x3 platform must be constructed from amethyst blocks. 
 The "catalyst" block in the center determines the time it takes for the fast travel point to channel. 
-In addition, not all fast travel points can be kept permanently active in all diminsions. 
+In addition, not all fast travel points can be kept permanently active in all dimensions. 
 For this the right "catalyst" must be chosen. 
 To activate the platform of a fast travel point, you must stand in the middle of the platform.
 
