@@ -32,8 +32,8 @@ Copper    | 10                                 | Overworld
 Iron      | 6                                  | Overworld
 Gold      | 3                                  | Overworld
 Emerald   | 2                                  | Overworld
-Diamond   | 1.5                                | Overworld, Nether
-Netherite | 1                                  | Overworld, Nether, End
+Diamond   | 1.5                                | Overworld, Nether, Custom
+Netherite | 1                                  | Overworld, Nether, End, Custom
 
 ### Connecting
 To connect two fast travel points, the first one must be marked first. To do this, stand in the middle of an activated unconnected platform and hold an amethyst shard in your hand. Now you can go to the second activated unconnected platform and do the same as you did with the first.
