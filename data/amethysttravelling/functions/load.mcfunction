@@ -13,8 +13,8 @@ scoreboard objectives add AT.isConnected dummy
 scoreboard objectives add AT.isConnecting dummy
 scoreboard objectives add AT.isIntact dummy
 scoreboard objectives add AT.lastId dummy
-scoreboard objectives add AT.lessParticles dummy
 scoreboard objectives add AT.level dummy
+scoreboard objectives add AT.moreParticles trigger
 scoreboard objectives add AT.paid dummy
 scoreboard objectives add AT.relChannTime dummy
 scoreboard objectives add AT.selected dummy
@@ -35,11 +35,12 @@ execute unless score var AT.lastId matches 0.. run scoreboard players set var AT
 
 # schedule loops
 function amethysttravelling:platform/detect_built_platform
-schedule function amethysttravelling:platform/destroy 4t
-schedule function amethysttravelling:platform/show 8t
-schedule function amethysttravelling:connection/first_platform 12t
-schedule function amethysttravelling:connection/second_platform 16t
-schedule function amethysttravelling:trigger/give_book 20t
+schedule function amethysttravelling:platform/destroy 3t
+schedule function amethysttravelling:platform/show 6t
+schedule function amethysttravelling:connection/first_platform 9t
+schedule function amethysttravelling:connection/second_platform 12t
+schedule function amethysttravelling:trigger/give_book 15t
+schedule function amethysttravelling:trigger/particle_setting 18t
 
 # setup bossbars
 bossbar add teleport0 {"translate":"Channelling","color":"dark_purple"}

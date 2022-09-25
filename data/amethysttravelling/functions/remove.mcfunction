@@ -16,8 +16,8 @@ scoreboard objectives remove AT.isConnected
 scoreboard objectives remove AT.isConnecting
 scoreboard objectives remove AT.isIntact
 scoreboard objectives remove AT.lastId
-scoreboard objectives remove AT.lessParticles
 scoreboard objectives remove AT.level
+scoreboard objectives remove AT.moreParticles
 scoreboard objectives remove AT.paid
 scoreboard objectives remove AT.relChannTime
 scoreboard objectives remove AT.selected
@@ -30,6 +30,7 @@ schedule clear amethysttravelling:platform/show
 schedule clear amethysttravelling:connection/first_platform
 schedule clear amethysttravelling:connection/second_platform
 schedule clear amethysttravelling:trigger/give_book
+schedule clear amethysttravelling:trigger/particle_setting
 
 # remove bossbars
 bossbar remove minecraft:teleport0
