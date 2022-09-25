@@ -18,17 +18,21 @@ execute at @a[scores={AT.relChannTime=8}] run playsound minecraft:particle.soul_
 execute at @a[scores={AT.relChannTime=9}] run playsound minecraft:particle.soul_escape master @a ~ ~ ~ 0.4 0.1
 execute at @a[scores={AT.relChannTime=10}] run playsound minecraft:particle.soul_escape master @a ~ ~ ~ 0.2 0.1
 
+# init particle option
+execute as @a unless score @s AT.lessParticles matches 0.. run scoreboard players set @s AT.lessParticles 0
+
 # channelling particle by player
-execute as @a[scores={AT.relChannTime=1}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 4
-execute as @a[scores={AT.relChannTime=2}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 8
-execute as @a[scores={AT.relChannTime=3}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 16
-execute as @a[scores={AT.relChannTime=4}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 32
-execute as @a[scores={AT.relChannTime=5}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 64
-execute as @a[scores={AT.relChannTime=6}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 128
-execute as @a[scores={AT.relChannTime=7}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 256
-execute as @a[scores={AT.relChannTime=8}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 512
-execute as @a[scores={AT.relChannTime=9}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 1024
-execute as @a[scores={AT.relChannTime=10}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 2048
+execute at @a[scores={AT.relChannTime=1..}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 6 normal @a[scores={AT.lessParticles=1}]
+execute at @a[scores={AT.relChannTime=1}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 4 normal @a[scores={AT.lessParticles=0}]
+execute at @a[scores={AT.relChannTime=2}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 8 normal @a[scores={AT.lessParticles=0}]
+execute at @a[scores={AT.relChannTime=3}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 16 normal @a[scores={AT.lessParticles=0}]
+execute at @a[scores={AT.relChannTime=4}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 32 normal @a[scores={AT.lessParticles=0}]
+execute at @a[scores={AT.relChannTime=5}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 64 normal @a[scores={AT.lessParticles=0}]
+execute at @a[scores={AT.relChannTime=6}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 128 normal @a[scores={AT.lessParticles=0}]
+execute at @a[scores={AT.relChannTime=7}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 256 normal @a[scores={AT.lessParticles=0}]
+execute at @a[scores={AT.relChannTime=8}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 512 normal @a[scores={AT.lessParticles=0}]
+execute at @a[scores={AT.relChannTime=9}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 1024 normal @a[scores={AT.lessParticles=0}]
+execute at @a[scores={AT.relChannTime=10}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 2048 normal @a[scores={AT.lessParticles=0}]
 
 # channelling particle by destination
 execute as @e[tag=fast_travel_point] at @s unless entity @p[distance=..1.5,scores={AT.channelTime=0..}] run scoreboard players set @s AT.relChannTime 0
@@ -36,16 +40,17 @@ execute as @a at @s if score @s AT.relChannTime > @e[tag=fast_travel_point,dista
 execute at @a[scores={AT.channelTime=0..}] as @e[tag=fast_travel_point] if score @s AT.id = @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] AT.targetId run scoreboard players operation @s AT.relChannTime = @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] AT.relChannTime
 execute as @e[tag=fast_travel_point] at @s if entity @p[distance=..1.5,scores={AT.channelTime=0..}] run scoreboard players set @s AT.relChannTime 0
 
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=1}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 4
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=2}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 8
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=3}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 16
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=4}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 32
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=5}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 64
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=6}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 128
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=7}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 256
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=8}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 512
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=9}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 1024
-execute as @e[tag=fast_travel_point,scores={AT.relChannTime=10}] at @s run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 2048
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=1..}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 6 normal @a[scores={AT.lessParticles=1}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=1}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 4 normal @a[scores={AT.lessParticles=0}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=2}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 8 normal @a[scores={AT.lessParticles=0}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=3}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 16 normal @a[scores={AT.lessParticles=0}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=4}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 32 normal @a[scores={AT.lessParticles=0}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=5}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 64 normal @a[scores={AT.lessParticles=0}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=6}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 128 normal @a[scores={AT.lessParticles=0}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=7}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 256 normal @a[scores={AT.lessParticles=0}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=8}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 512 normal @a[scores={AT.lessParticles=0}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=9}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 1024 normal @a[scores={AT.lessParticles=0}]
+execute at @e[tag=fast_travel_point,scores={AT.relChannTime=10}] run particle minecraft:enchant ~ ~0.4 ~ 0.3 0.9 0.3 0.5 2048 normal @a[scores={AT.lessParticles=0}]
 
 # set bossbar
 bossbar set minecraft:teleport0 players @a[scores={AT.channelTime=1..,AT.relChannTime=0}]

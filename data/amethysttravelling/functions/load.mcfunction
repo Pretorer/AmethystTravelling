@@ -13,6 +13,7 @@ scoreboard objectives add AT.isConnected dummy
 scoreboard objectives add AT.isConnecting dummy
 scoreboard objectives add AT.isIntact dummy
 scoreboard objectives add AT.lastId dummy
+scoreboard objectives add AT.lessParticles dummy
 scoreboard objectives add AT.level dummy
 scoreboard objectives add AT.paid dummy
 scoreboard objectives add AT.relChannTime dummy
