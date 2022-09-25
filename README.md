@@ -66,6 +66,10 @@ To reinstall this datapack, use the command `/datapack enable "file/AmethystTrav
 
 ## Configuration:
 
+### Particle count
+You can adjust the amount of particles that are displayed when travelling via Minecraft's graphics options. Since it is still a lot of particles if you use the reduced amount or have the choice to use only the necessary particles, there is an option in the datapack to adjust the amount per player.
+To use the reduced amount of particles use the command `/trigger AT.moreParticles set 0`. The default setting is the high amount, which shows an increasing cloud of particles. To re-enable this, use the command `/trigger AT.moreParticles` or `/trigger AT.moreParticles set <value>` with a value greater than zero.
+
 ### Channeling time
 Channeling time can be adjusted for different tiers of fast travel points.
 For example, a netherite fast travel point that lets you travel into the end can be slower than an emerald fast travel point, if desired.
