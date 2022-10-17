@@ -21,3 +21,9 @@ scoreboard players set @s AT.blocked 1
 
 # message
 tellraw @p [{"translate":"%1$s §5has built a new §dfast travel point§5!","with":[{"selector":"@p","color":"dark_purple"}]}]
+
+# give advancement
+execute at @s if block ~ ~-1 ~ #amethysttravelling:copper run advancement grant @s only amethysttravelling:build
+execute at @s if entity @e[tag=fast_travel_point,scores={AT.level=1},distance=..1.5] unless block ~ ~-1 ~ #amethysttravelling:copper run advancement grant @s only amethysttravelling:build_tier_one
+execute at @s if entity @e[tag=fast_travel_point,scores={AT.level=2},distance=..1.5] run advancement grant @s only amethysttravelling:build_tier_two
+execute at @s if entity @e[tag=fast_travel_point,scores={AT.level=3},distance=..1.5] run advancement grant @s only amethysttravelling:build_tier_three

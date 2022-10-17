@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:budding_amethyst"
+        },
+        "title": {
+            "translate": "What's going wrong here?"
+        },
+        "description": {
+            "translate": "The chosen catalyst block seems to be too weak here"
+        },
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:build",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

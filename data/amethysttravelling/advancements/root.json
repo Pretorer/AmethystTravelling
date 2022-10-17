@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:amethyst_cluster"
+        },
+        "title": {
+            "translate": "Amethysttravelling"
+        },
+        "description": {
+            "translate": "You feel that these gems have something magical ..."
+        },
+        "background": "minecraft:textures/block/amethyst_block.png",
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "has_amethyst_shard": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:amethyst_shard"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

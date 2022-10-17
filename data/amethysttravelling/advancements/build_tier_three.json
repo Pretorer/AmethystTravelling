@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:amethyst_cluster"
+        },
+        "title": {
+            "translate": "Discover tier 3"
+        },
+        "description": {
+            "translate": "Use a block of netherite as a catalyst"
+        },
+        "frame": "goal",
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:build_tier_two",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

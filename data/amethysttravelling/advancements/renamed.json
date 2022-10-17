@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:name_tag"
+        },
+        "title": {
+            "translate": "Choosed a matching name"
+        },
+        "description": {
+            "translate": "Travel to a renamed fast travel point. To rename a fast travel point, use a name tag on the center of the platform"
+        },
+        "frame": "goal",
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:connect",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

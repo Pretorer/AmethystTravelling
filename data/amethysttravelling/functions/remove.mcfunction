@@ -2,7 +2,6 @@
 execute as @e[tag=fast_travel_point] at @s run function amethysttravelling:platform/remove
 
 # remove all scoreboards
-scoreboard objectives remove AT.getManual
 scoreboard objectives remove AT.blocked
 scoreboard objectives remove AT.channelTime
 scoreboard objectives remove AT.chunkX
@@ -23,13 +22,16 @@ scoreboard objectives remove AT.relChannTime
 scoreboard objectives remove AT.selected
 scoreboard objectives remove AT.targetId
 
+scoreboard objectives remove AT.inNether
+scoreboard objectives remove AT.inOverworld
+scoreboard objectives remove AT.inEnd
+
 # reset schedule 
 schedule clear amethysttravelling:platform/detect_built_platform
 schedule clear amethysttravelling:platform/destroy
 schedule clear amethysttravelling:platform/show
 schedule clear amethysttravelling:connection/first_platform
 schedule clear amethysttravelling:connection/second_platform
-schedule clear amethysttravelling:trigger/give_book
 schedule clear amethysttravelling:trigger/particle_setting
 
 # remove bossbars

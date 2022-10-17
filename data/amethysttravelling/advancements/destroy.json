@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_pickaxe"
+        },
+        "title": {
+            "translate": "Remove a fast travel point"
+        },
+        "description": {
+            "translate": "Break one block of the platform of a fast travel point"
+        },
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:connect",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

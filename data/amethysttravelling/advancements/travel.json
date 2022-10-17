@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:compass"
+        },
+        "title": {
+            "translate": "That was pretty fast"
+        },
+        "description": {
+            "translate": "Stand on a connected platform and hold an amethyst shard in your hand"
+        },
+        "frame": "goal",
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:connect",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

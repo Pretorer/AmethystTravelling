@@ -7,3 +7,6 @@ scoreboard players set @s AT.isConnected 0
 
 # message
 tellraw @a [{"translate":"§5A §dfast travel point §5has lost its destination!"}]
+
+# give advancement
+advancement grant @p[distance=..1.5] only amethysttravelling:travel_failed

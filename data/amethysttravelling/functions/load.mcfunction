@@ -1,5 +1,4 @@
 # add variables
-scoreboard objectives add AT.getManual trigger
 scoreboard objectives add AT.blocked dummy
 scoreboard objectives add AT.channelTime dummy
 scoreboard objectives add AT.chunkX dummy
@@ -20,6 +19,10 @@ scoreboard objectives add AT.relChannTime dummy
 scoreboard objectives add AT.selected dummy
 scoreboard objectives add AT.targetId dummy
 
+scoreboard objectives add AT.inNether dummy
+scoreboard objectives add AT.inOverworld dummy
+scoreboard objectives add AT.inEnd dummy
+
 # setup
 scoreboard players set 10 AT.constants 10
 scoreboard players set 16 AT.constants 16
@@ -39,8 +42,7 @@ schedule function amethysttravelling:platform/destroy 3t
 schedule function amethysttravelling:platform/show 6t
 schedule function amethysttravelling:connection/first_platform 9t
 schedule function amethysttravelling:connection/second_platform 12t
-schedule function amethysttravelling:trigger/give_book 15t
-schedule function amethysttravelling:trigger/particle_setting 18t
+schedule function amethysttravelling:trigger/particle_setting 15t
 
 # setup bossbars
 bossbar add teleport0 {"translate":"Channelling","color":"dark_purple"}

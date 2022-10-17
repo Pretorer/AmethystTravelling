@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:creeper_head"
+        },
+        "title": {
+            "translate": "Appeared with a blast"
+        },
+        "description": {
+            "translate": "Travel with a creeper"
+        },
+        "frame": "challenge",
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:carry_mob",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

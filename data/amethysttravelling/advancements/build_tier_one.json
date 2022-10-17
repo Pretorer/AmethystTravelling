@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:medium_amethyst_bud"
+        },
+        "title": {
+            "translate": "Discover tier 1"
+        },
+        "description": {
+            "translate": "Besides copper use an iron, gold or emerald block as a catalyst"
+        },
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:build",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -16,6 +16,9 @@ execute as @e[tag=fast_travel_point] if score @s AT.id = var AT.targetId run sco
 # block
 scoreboard players set @s AT.blocked 1
 
+# give advancement
+advancement grant @s only amethysttravelling:connect
+
 # reset player
 scoreboard players set @s AT.isConnecting 0
 scoreboard players set @s AT.targetId 0

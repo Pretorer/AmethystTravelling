@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spyglass"
+        },
+        "title": {
+            "translate": "Is my destination destroyed?"
+        },
+        "description": {
+            "translate": "Travel with a fast travel point to a destroyed platform"
+        },
+        "frame": "goal",
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:destroy",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:filled_map"
+        },
+        "title": {
+            "translate": "The wrong destination?"
+        },
+        "description": {
+            "translate": "Leave the platform before the fast travel point is fully channelized."
+        },
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:travel",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

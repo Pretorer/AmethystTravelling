@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lead"
+        },
+        "title": {
+            "translate": "Did you see the cost?"
+        },
+        "description": {
+            "translate": "Travel with a passive creature"
+        },
+        "frame": "task",
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:travel",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

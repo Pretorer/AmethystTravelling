@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:large_amethyst_bud"
+        },
+        "title": {
+            "translate": "Discover tier 2"
+        },
+        "description": {
+            "translate": "Use a diamond block as a catalyst"
+        },
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:build_tier_one",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

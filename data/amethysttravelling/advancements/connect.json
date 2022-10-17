@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "title": {
+            "translate": "Connect two fast travel points"
+        },
+        "description": {
+            "translate": "Stand in the center of an unconnected platform and hold an amethyst shard. Then repeat that for the destination"
+        },
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:build",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

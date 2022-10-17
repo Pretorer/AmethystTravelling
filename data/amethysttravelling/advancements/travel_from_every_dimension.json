@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spyglass"
+        },
+        "title": {
+            "translate": "Arcane traveler"
+        },
+        "description": {
+            "translate": "Use a fast travel point in the nether, the overworld, and the end"
+        },
+        "frame": "challenge",
+        "announce_to_chat": false
+    },
+    "parent": "amethysttravelling:travel",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -25,4 +25,3 @@ scoreboard players set @s AT.dimension 999
 execute if predicate amethysttravelling:in_end run scoreboard players set @s AT.dimension 1
 execute if predicate amethysttravelling:in_overworld run scoreboard players set @s AT.dimension 0
 execute if predicate amethysttravelling:in_nether run scoreboard players set @s AT.dimension -1
-
