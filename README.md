@@ -8,13 +8,12 @@ It utilizes amethysts and makes them a consistently needed resource for fast tra
   - allows to carry nearby npcs (also mobs)
 - different tiers of fast travel points
   - affects speed and available dimensions
-- in-game manual (written book)
+- advancements as in-game manual
 - designed to be multiplayer friendly
 - no necessary resource pack
   - optional translations are available with the resource pack: [Amethysttravelling-language-pack](https://github.com/Pretorer/Amethysttravelling-language-pack)
 
 ## Usage:
-To get the in-game manual, enter the command `/trigger AT.getManual`.
 
 ### Building
 To build a fast travel point, a 3x3 platform must be constructed from amethyst blocks. 
