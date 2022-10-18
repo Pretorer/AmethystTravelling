@@ -13,17 +13,8 @@
         "announce_to_chat": false
     },
     "criteria": {
-        "has_amethyst_shard": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "items": [
-                            "minecraft:amethyst_shard"
-                        ]
-                    }
-                ]
-            }
+        "requirement": {
+            "trigger": "minecraft:tick"
         }
     }
 }

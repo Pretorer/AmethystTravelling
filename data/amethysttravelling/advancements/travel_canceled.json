@@ -7,7 +7,7 @@
             "translate": "The wrong destination?"
         },
         "description": {
-            "translate": "Leave the platform before the fast travel point is fully channelized."
+            "translate": "Leave the platform before the fast travel point is fully channelized"
         },
         "announce_to_chat": false
     },

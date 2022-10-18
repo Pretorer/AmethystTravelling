@@ -7,7 +7,7 @@
             "translate": "Build a fast travel point"
         },
         "description": {
-            "translate": "Build a 3x3 platform by placing 8 amethyst blocks in a square around a copper block as a catalyst. Then stand in the middle of an unactivated platform"
+            "translate": "Build a 3x3 platform by placing 8 amethyst blocks in a square around a copper block as a catalyst. Then stand in the middle of the unactivated platform"
         },
         "announce_to_chat": false
     },
