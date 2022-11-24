@@ -8,3 +8,4 @@ execute at @s if entity @p[scores={AT.paid=1}] if entity @s[type=creeper] run ad
 
 # tp if paid
 execute if entity @p[scores={AT.paid=1},distance=..2] at @e[tag=fast_travel_point,scores={AT.selected=1},limit=1] run tp @s ~ ~ ~
+
