@@ -5,9 +5,11 @@ It utilizes amethysts and makes them a consistently needed resource for fast tra
 ## Features:
 - fast travel between distant places and dimensions
   - can display the name of the destination after travelling
+  - allows traveling while riding an entity
   - allows to carry nearby npcs (also mobs)
 - different tiers of fast travel points
   - affects speed and available dimensions
+- detects the items in both hands
 - advancements as in-game manual
 - designed to be multiplayer friendly
 - no necessary resource pack
