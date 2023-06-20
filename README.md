@@ -1,6 +1,7 @@
 # Amethysttravelling
 A Minecraft datapack for building fast travel points.
-It utilizes amethysts and makes them a consistently needed resource for fast travel.
+It utilizes amethysts and makes them a consistently needed resource for fast travel.  
+See [Amethysttravelling on planetminecraft](https://www.planetminecraft.com/data-pack/amethysttravelling/).
 
 ## Features:
 - fast travel between distant places and dimensions
