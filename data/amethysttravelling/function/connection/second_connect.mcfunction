@@ -1,3 +1,11 @@
+# check first platform still exists
+scoreboard players set var AT.isIntact 0
+scoreboard players operation var AT.targetId = @s AT.targetId
+execute as @e[tag=fast_travel_point] if score @s AT.id = var AT.targetId run scoreboard players set var AT.isIntact 1
+execute if score var AT.isIntact matches 0 run function amethysttravelling:connection/failed_connect
+execute if score var AT.isIntact matches 0 run return 0
+
+# remove item, playsound
 clear @s #amethysttravelling:magical_item 1
 playsound minecraft:item.lodestone_compass.lock block @a ~ ~1 ~ 2 1.6
 
