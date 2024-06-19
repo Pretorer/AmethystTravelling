@@ -7,7 +7,7 @@
             "predicate": {
                 "equipment": {
                     "mainhand": {
-                        "tag": "amethysttravelling:magical_item"
+                        "items": "#amethysttravelling:magical_item"
                     }
                 }
             }
@@ -18,7 +18,7 @@
             "predicate": {
                 "equipment": {
                     "offhand": {
-                        "tag": "amethysttravelling:magical_item"
+                        "items": "#amethysttravelling:magical_item"
                     }
                 }
             }

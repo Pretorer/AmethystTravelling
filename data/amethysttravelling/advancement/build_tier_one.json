@@ -1,17 +1,17 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:iron_pickaxe"
+            "id": "minecraft:medium_amethyst_bud"
         },
         "title": {
-            "translate": "Remove a fast travel point"
+            "translate": "Discover tier 1"
         },
         "description": {
-            "translate": "Break one block of the platform of a fast travel point"
+            "translate": "Besides copper use an iron, gold or emerald block as a catalyst"
         },
         "announce_to_chat": false
     },
-    "parent": "amethysttravelling:connect",
+    "parent": "amethysttravelling:build",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"

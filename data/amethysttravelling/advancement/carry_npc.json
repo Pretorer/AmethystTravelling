@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:creeper_head"
+            "id": "minecraft:lead"
         },
         "title": {
-            "translate": "Appeared with a blast"
+            "translate": "Did you see the cost?"
         },
         "description": {
-            "translate": "Travel with a creeper"
+            "translate": "Travel with a passive creature"
         },
-        "frame": "challenge",
+        "frame": "task",
         "announce_to_chat": false
     },
-    "parent": "amethysttravelling:carry_mob",
+    "parent": "amethysttravelling:travel",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"

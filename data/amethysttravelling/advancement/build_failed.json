@@ -1,18 +1,17 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:lead"
+            "id": "minecraft:budding_amethyst"
         },
         "title": {
-            "translate": "Did you see the cost?"
+            "translate": "What's going wrong here?"
         },
         "description": {
-            "translate": "Travel with a passive creature"
+            "translate": "The chosen catalyst block seems to be too weak here"
         },
-        "frame": "task",
         "announce_to_chat": false
     },
-    "parent": "amethysttravelling:travel",
+    "parent": "amethysttravelling:build",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"

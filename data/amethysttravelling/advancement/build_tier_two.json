@@ -1,18 +1,17 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:amethyst_cluster"
+            "id": "minecraft:large_amethyst_bud"
         },
         "title": {
-            "translate": "Discover tier 3"
+            "translate": "Discover tier 2"
         },
         "description": {
-            "translate": "Use a block of netherite as a catalyst"
+            "translate": "Use a diamond block as a catalyst"
         },
-        "frame": "goal",
         "announce_to_chat": false
     },
-    "parent": "amethysttravelling:build_tier_two",
+    "parent": "amethysttravelling:build_tier_one",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"

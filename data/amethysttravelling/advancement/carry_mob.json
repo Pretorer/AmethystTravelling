@@ -1,17 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:budding_amethyst"
+            "id": "minecraft:iron_sword"
         },
         "title": {
-            "translate": "What's going wrong here?"
+            "translate": "Was that risky?"
         },
         "description": {
-            "translate": "The chosen catalyst block seems to be too weak here"
+            "translate": "Travel with a hostile creature"
         },
+        "frame": "goal",
         "announce_to_chat": false
     },
-    "parent": "amethysttravelling:build",
+    "parent": "amethysttravelling:carry_npc",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"

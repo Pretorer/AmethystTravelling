@@ -1,18 +1,17 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:spyglass"
+            "id": "minecraft:iron_pickaxe"
         },
         "title": {
-            "translate": "Arcane traveler"
+            "translate": "Remove a fast travel point"
         },
         "description": {
-            "translate": "Use a fast travel point in the nether, the overworld, and the end"
+            "translate": "Break one block of the platform of a fast travel point"
         },
-        "frame": "challenge",
         "announce_to_chat": false
     },
-    "parent": "amethysttravelling:travel",
+    "parent": "amethysttravelling:connect",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"

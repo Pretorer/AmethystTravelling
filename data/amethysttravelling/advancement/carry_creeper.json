@@ -1,17 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:large_amethyst_bud"
+            "id": "minecraft:creeper_head"
         },
         "title": {
-            "translate": "Discover tier 2"
+            "translate": "Appeared with a blast"
         },
         "description": {
-            "translate": "Use a diamond block as a catalyst"
+            "translate": "Travel with a creeper"
         },
+        "frame": "challenge",
         "announce_to_chat": false
     },
-    "parent": "amethysttravelling:build_tier_one",
+    "parent": "amethysttravelling:carry_mob",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"

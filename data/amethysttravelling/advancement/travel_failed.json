@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:name_tag"
+            "id": "minecraft:spyglass"
         },
         "title": {
-            "translate": "Choosed a matching name"
+            "translate": "Is my destination destroyed?"
         },
         "description": {
-            "translate": "Travel to a renamed fast travel point. To rename a fast travel point, use a name tag on the center of the platform"
+            "translate": "Travel with a fast travel point to a destroyed platform"
         },
         "frame": "goal",
         "announce_to_chat": false
     },
-    "parent": "amethysttravelling:connect",
+    "parent": "amethysttravelling:destroy",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"

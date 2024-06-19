@@ -1,17 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:medium_amethyst_bud"
+            "id": "minecraft:spyglass"
         },
         "title": {
-            "translate": "Discover tier 1"
+            "translate": "Arcane traveler"
         },
         "description": {
-            "translate": "Besides copper use an iron, gold or emerald block as a catalyst"
+            "translate": "Use a fast travel point in the nether, the overworld, and the end"
         },
+        "frame": "challenge",
         "announce_to_chat": false
     },
-    "parent": "amethysttravelling:build",
+    "parent": "amethysttravelling:travel",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"
