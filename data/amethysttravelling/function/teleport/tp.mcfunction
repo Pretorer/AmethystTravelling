@@ -22,7 +22,7 @@ execute at @e[tag=fast_travel_point,scores={AT.selected=1}] run playsound minecr
 execute at @s if entity @e[tag=fast_travel_point,name=!" ",scores={AT.selected=1},distance=..1.5,sort=nearest,limit=1] run function amethysttravelling:teleport/show_title
 
 # give advancement
-advancement grant @s only amethysttravelling:travel
+execute at @s if entity @e[tag=fast_travel_point,distance=..1.5,scores={AT.selected=1}] run advancement grant @s only amethysttravelling:travel
 execute at @s if entity @e[tag=fast_travel_point,distance=..1.5,name=!" ",scores={AT.selected=1}] run advancement grant @s only amethysttravelling:renamed
 
 # taget not found / destroyed

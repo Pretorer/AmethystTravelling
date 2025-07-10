@@ -1,5 +1,5 @@
 # create maker for the platform
-summon armor_stand ~ ~ ~ {Tags: ["fast_travel_point"], Invisible: 1b, NoGravity: 1b, Marker: 0b, DisabledSlots: 4144959, CustomName: '{"text":" "}'}
+summon armor_stand ~ ~ ~ {Tags: ["fast_travel_point"], Invisible: 1b, NoGravity: 1b, Marker: 0b, DisabledSlots: 4144959, CustomName: " "}
 scoreboard players set @e[tag=fast_travel_point,distance=..1.5,sort=nearest,limit=1] AT.isConnected 0
 forceload add ~ ~
 
