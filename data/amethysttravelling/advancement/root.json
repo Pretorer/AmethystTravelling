@@ -9,7 +9,7 @@
         "description": {
             "translate": "You feel that these gems have something magical ..."
         },
-        "background": "minecraft:textures/block/amethyst_block.png",
+        "background": "minecraft:block/amethyst_block",
         "announce_to_chat": false
     },
     "criteria": {
